@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='zh'>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="css/bootstrap.js"></script>
+        <script src="js/jquery-3.5.1.js"></script>
+    </head>
+    <body>
+    <div class="container">
+        <div class="row" id="select">
+            <select name="chlist" id="chlist" class="form-control"></select>
+        </div>
+        <div class="row" id="select">
+            <input type="button" value="复习错题" onclick="retryWrongList()" class="btn btn-primary col-2">
+        </div>
+        <div class="row" id="result">
+            <label for="" class="col-1">Total:</label>
+            <span class="col-1" id="total">0</span>
+            <label for="" class="col-1">Left:</label>
+            <span class="col-1" id="left">0</span>
+            <label for="" class="col-1">Right:</label>
+            <span class="col-1" id="right">0</span>
+            <label for="" class="col-1">Wrong:</label>
+            <span class="col-1" id="wrong">0</span>
+        </div>
+        <div id="question">
+
+        </div>
+        <div class="row mt-4 mb-4">
+            <input type="button" value="提交" onclick="check_multy()" class="btn btn-primary">
+        </div>
+        <div id="pre_question">
+
+        </div>
+        <div id="q_template" style="display:none">
+            <div class="total">
+                <div class="row title"></div>
+                <div class="items"></div>
+                <div class="answer"></div>
+            </div>
+            <div class="item">
+                <input type="radio" name="" id="" class="answer_radio">
+                <label class="text"></label>
+            </div>
+            <div class="check_item">
+                <input type="checkbox" name="" id="" class="answer_checkbox">
+                <label class="text"></label>
+            </div>
+        </div>
+    </div>    
+    </body>
+    <script src="js/init.js"></script>
+    <script src="js/util.js"></script>
+    
+    <script src="data/all.js"></script>
+
+
+    <script src="js/index.js"></script>
+</html>
